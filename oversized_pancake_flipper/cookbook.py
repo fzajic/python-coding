@@ -1,4 +1,17 @@
 def read_pancakes(line):
+    """Short summary.
+
+    Parameters
+    ----------
+    line :
+        Number of line from which you want to import.
+
+    Returns
+    -------
+    List
+        List of pancakes.
+
+    """
     fin = open("pancakes.txt", "r")
     for i in range(line):
         pancakes_string = fin.readline()
@@ -9,6 +22,19 @@ def read_pancakes(line):
     return pancakes_list
 
 def are_all_happy(pancakes):
+    """Return True if all pancakes are happy.
+
+    Parameters
+    ----------
+    pancakes : List
+        List of pancakes.
+
+    Returns
+    -------
+    Boolean
+        Either True of False.
+
+    """
     sample = []
     for i in range(len(pancakes)):
         sample.append("+")
@@ -22,11 +48,25 @@ def swap(element): #swap - for +, or vice versa
     else: return"+"
 
 def flip_pancakes(pancakes, start_index, flipper_size):
+    """Short summary.
+    Flips flipper_size pancaks from start_index.
+    """
     for index in range(start_index, start_index + flipper_size):
         pancakes[index] = swap(pancakes[index])
     return pancakes
 
 def print_pancakes(pancakes, truth):
+    """Print pancakes as a string with either indexes bellow or not.
+
+    Parameters
+    ----------
+    pancakes : List
+        List of pancakes
+    truth : Boolean
+        True - prints out indexes bellow
+        False - prints out just the list.
+
+    """
     s = ""
     for i in pancakes:
         s = s + i
