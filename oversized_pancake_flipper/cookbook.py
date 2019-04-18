@@ -21,18 +21,19 @@ def swap(element): #swap - for +, or vice versa
     if element == "+": return "-"
     else: return"+"
 
-def flip_pancakes(pancakes, start_index):
+def flip_pancakes(pancakes, start_index, flipper_size):
     for index in range(start_index, start_index + flipper_size):
         pancakes[index] = swap(pancakes[index])
     return pancakes
 
-def print_pancakes(pancakes):
+def print_pancakes(pancakes, truth):
     s = ""
     for i in pancakes:
         s = s + i
     print(s)
-    n = ""
-    for i in range(len(s)):
-        n = n + str(i)
-    print(n)
+    if truth:
+        n = ""
+        for i in range(len(s)):
+            n = n + str(i)
+        print(n)
     return

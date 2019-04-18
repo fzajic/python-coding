@@ -13,14 +13,12 @@
 --++--+-+
 -++-
 +-++-+-
-+-
-++
-++-+---
+---+-++-
++++++
+-+-+-
 
 
 postup:
 1) are all happy? /prubezne testovat
 2) davat bacha na out of range u otaceni
 3)obracet postupne od nuly (neni to ale na nejmin tahu)
-
-tak co funguje to?
