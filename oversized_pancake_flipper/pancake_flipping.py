@@ -10,4 +10,4 @@ for i in pancakes:
     if i == "_":
         pancakes = flip_pancakes(pancakes, counter)
     counter = counter + 1
-print(pancakes)
+print_pancakes(pancakes)
