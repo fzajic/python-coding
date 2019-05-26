@@ -1,10 +1,15 @@
+def setup():
+    import os
+    os.chdir("the_ultimate_ratatouille_recipe")
+    return
+
 def read_data_input(file_name):
+
     fin = open(file_name, "r")
-    data = []
+    numbers = ""
     for i in range(4):
-        data.append(fin.readlines())
-    fin.close()
-    return data
+        numbers = numbers + fin.readline() + ""
+    return numbers.split()
 
-
+setup()
 print(read_data_input("input_data.txt"))
