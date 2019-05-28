@@ -60,10 +60,11 @@ Small dataset
 
 Input
 6                         //number of test cases
+
 2 1                       //number of ingredients, number of packages of each ingredient
 500 300                   //number of grams of each ingredient that are needed
-900                       //number of grams of first ingredience we have
-660                       //number of grams of second ingredience we have
+900                       //number of grams of first ingredience we have of each individual package
+660                       //number of grams of second ingredience we have of each individual package
 
 2 1
 500 300
@@ -93,7 +94,7 @@ Input
 Output
 Case #1: 1
 Case #2: 0
-Case #3: 1  
+Case #3: 1
 Case #4: 0
 Case #5: 3
 Case #6: 3
