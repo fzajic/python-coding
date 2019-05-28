@@ -64,21 +64,26 @@ Input
 500 300                   //number of grams of each ingredient that are needed
 900                       //number of grams of first ingredience we have
 660                       //number of grams of second ingredience we have
+
 2 1
 500 300
 1500
 809
+
 2 2
 50 100
 450 449
 1100 1101
+
 2 1
 500 300
 300
 500
+
 1 8
 10
 11 13 17 11 16 14 12 18
+
 3 3
 70 80 90
 1260 1500 700
@@ -88,7 +93,7 @@ Input
 Output
 Case #1: 1
 Case #2: 0
-Case #3: 1
+Case #3: 1  
 Case #4: 0
 Case #5: 3
 Case #6: 3
