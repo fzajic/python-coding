@@ -38,13 +38,28 @@ def read_data_input(input_file, case_number):               #return number of li
     from linecache import getline
     begin_line = first_lines(input_file)[0][case_number-1]  #gets first line of case
     case_length = first_lines(input_file)[1][case_number-1] #gets length of case in number of lines
-    for i in range(begin_line, begin_line + case_length):   
+    for i in range(begin_line, begin_line + case_length):
         line = getline(input_file, i).split()               #make list of numbers from line
         line = make_integers(line)                          #change strings to integers
         print(line)
     return
 
+def max(recipe_value):
+    recipe_value = float(recipe_value)
+    max = recipe_value * 1.1
+    return max
 
+def min(recipe_value):
+    recipe_value = float(recipe_value)
+    min = recipe_value * 0.9
+    return min
+
+def limit(recipe_value):
+    recipe_value = float(recipe_value)
+    min = recipe_value * 0.9
+    max = recipe_value * 1.1
+    return min, max
+    
 
 
 
