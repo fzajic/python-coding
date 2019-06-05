@@ -1,0 +1,21 @@
+Jak to udelat:
+
+Moznost 1
+------------
+Definovat si minimum a maximum pro kazdou infredienci.
+Vzit si nejmensi package a zkusit ho rozdelit na porce. Najit, jestli k němu sedí i další packages ingrediencí. Opakovat.
+
+Moznost 2
+------------
+Vydelit package potrebnym mnozstvim ingredience, potom zjistit jestli k tomu neco sedi?
+
+Conclussion:
+--------------
+U obou možnosti budu asi muset porovnávat gram od gramu, co se tyce reseni. Chtelo by to neco jednodussiho a efektivniho.
+
+
+Another options:
+
+Moznost 3
+----------
+who knows? :)
