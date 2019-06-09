@@ -4,26 +4,32 @@ def setup():
     import os
     os.chdir("the_ultimate_ratatouille_recipe")
     return
-setup()
+#setup()
 print(os.getcwd())
 
-raise Exception("I am an exception!")
-
-"""
-fin = open("data.txt", "r")
-
-from linecache import getline
-x = getline("data.txt", 0)
-print(x)
-print("")
-data = fin.readline().split()
-print(data)
-fin.close()
 
 
-fin = open("data.txt", "r") #count number of lines
-l=0
-for i in fin:
-    l = l+1
-print(l)
-"""
+
+print(os.getcwd() == r"C:\Users\filip\Coding\python-coding\the_ultimate_ratatouille_recipe")
+
+
+
+
+
+def setup(state):
+    """Set enviroment
+    Paramters
+    ---------
+    state:
+        Set False or True in order to get printed info into terminal
+    """
+    import os
+    if os.getcwd() != print(os.getcwd() == r"C:\Users\filip\Coding\python-coding\the_ultimate_ratatouille_recipe"):
+        os.chdir("the_ultimate_ratatouille_recipe")
+        if state == True:
+            print("changing directorey to: \n", os.getcwd(), "\n", "done... \n")
+    else:
+        if state == True:
+            print("directory is already set correctly, no need to change it")
+    return
+setup(True)

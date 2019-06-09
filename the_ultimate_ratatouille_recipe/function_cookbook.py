@@ -16,7 +16,7 @@ def setup(state):
     return
 
 
-setup(False)
+setup(True)
 
 def file_length(input_file):
     """return number of lines file
@@ -161,5 +161,5 @@ print(read_data_input("data.txt",6))
 print(limit(100, "maximum"))
 """
 
-print("")
-print(read_data_input("data.txt", 5))
+#print("")
+#print(read_data_input("data.txt", 5))
